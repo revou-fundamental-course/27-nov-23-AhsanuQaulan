@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Matematik Segitiga</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2 id="calculator-title">Kalkulator Matematik Segitiga</h2>
+
+            <div class="keterangan">
+                <p>Menghitung Luas Segitiga</p>
+            </div>
+
+            <div class="gambar-luas-segitiga">
+                <img src="asset/luas-segitiga.PNG" alt="luas segitiga">
+            </div>
+
+            <div class="rumus">
+                <p>Rumus Luas = 1/2 x alas x tinggi</p>
+            </div>
+
+            <div class="input-group">
+                <label for="alas">Alas</label>
+                <input type="number" id="alas" placeholder="Masukkan Alas">
+            </div>
+
+            <div class="input-group">
+                <label for="tinggi">Tinggi</label>
+                <input type="number" id="tinggi" placeholder="Masukkan Tinggi">
+            </div>
+
+            <button id="hitung-btn" onclick="hitungLuas()">Hitung</button>
+            <button id="reset-btn" onclick="resetForm()">Reset</button>
+
+            <div id="hasil">
+                <p id="luas-hasil"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
